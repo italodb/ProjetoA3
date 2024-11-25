@@ -1,0 +1,180 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(#c800ff 0%, #383333 100%); /* Gradiente de fundo neutro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    background: rgb(208, 205, 205); /* Fundo branco */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #6a0dad; /* Cor roxa para o título */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #6a0dad; /* Borda roxa */
+    border-radius: 10px; /* Bordas arredondadas */
+    background: #f9f9f9; /* Fundo claro */
+    color: #333; /* Texto escuro */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #8a2be2; /* Borda roxa clara ao focar */
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.5); /* Sombra ao focar */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #6a0dad; /* Cor do botão roxa */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #8a2be2; /* Cor do botão ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0f0f0; /* Fundo claro para os itens da lista */
+    padding: 15px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #e0e0e0; /* Fundo mais escuro ao passar o mouse */
+}
+
+li form {
+    display: flex;
+    align-items: center;
+}
+
+li input[type="text"] {
+    margin: 0 5px;
+    width: 80px; /* Largura fixa para os campos de edição */
+    border: 1px solid #6a0dad; /* Borda roxa */
+    border-radius: 5px; /* Bordas arredondadas */
+    background: #f9f9f9; /* Fundo claro */
+    color: #333; /* Texto escuro */
+}
+
+a {
+    color: #6a0dad; /* Cor do link roxa */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #8a2be2; /* Cor do link ao passar o mouse */
+}
+
+li {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens ao longo do eixo horizontal */
+    align-items: center; /* Alinha os itens ao longo do eixo vertical */
+    background: #f0f0f0; /* Fundo claro para os itens da lista */
+    padding: 15px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+li form {
+    display: flex; /* Mantém os inputs e botões do formulário em linha */
+    align-items: center; /* Alinha os itens do formulário verticalmente */
+}
+
+li input[type="text"] {
+    margin-right: 10px; /* Espaçamento entre o input e o botão de salvar */
+}
+
+li button {
+    margin-left: 10px; /* Espaçamento entre o botão de salvar e o botão de excluir */
+    background-color: #6a0dad; /* Cor do botão de salvar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+li button:hover {
+    background-color: #8a2be2; /* Cor do botão ao passar o mouse */
+}
+
+.delete-button {
+    background-color: #ff4d4d; /* Cor do botão de excluir */
+    margin-left: 10px; /* Espaçamento entre o botão de salvar e o botão de excluir */
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a; /* Cor do botão de excluir ao passar o mouse */
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#c123de;
+	border-radius:6px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
